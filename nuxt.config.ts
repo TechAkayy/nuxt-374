@@ -2,9 +2,9 @@ export default defineNuxtConfig({
   modules: [
     function (inlineOptions, nuxt) {
       nuxt.hook('ready', async (nuxt) => {
-        // Restart in 20 secs
+        // Restart in 12 secs
         setTimeout(() => {
-          console.log('Restarting in the 20 secs..')
+          console.log('Restarting in the 12 secs..')
           nuxt.callHook('restart', {hard: true})
         }, 12000)
       })
@@ -17,5 +17,4 @@ export default defineNuxtConfig({
       })
     },
   ],
-  devtools: {enabled: true},
 })
