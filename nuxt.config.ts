@@ -4,8 +4,8 @@ export default defineNuxtConfig({
       nuxt.hook('ready', async (nuxt) => {
         // Restart in 12 secs
         setTimeout(() => {
-          console.log('Restarting in the 12 secs..')
-          nuxt.callHook('restart', {hard: true})
+          console.log('Restarting in 12 secs..')
+          nuxt.callHook('restart', { hard: true })
         }, 12000)
       })
 
